@@ -3,6 +3,7 @@
   <mat-grid-tile><h2>Directions (SIG) & Quantity</h2></mat-grid-tile>
   <mat-grid-tile><h2>Refills</h2></mat-grid-tile>
 </mat-grid-list>
+
 <mat-grid-list cols="3" rowHeight="200px">
   <mat-grid-tile>
     <div class="checkbox-container">
@@ -28,15 +29,13 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <div class="direction-container">
+      <!-- 500mg content -->
       <div
         *ngIf="
           checkbox500.checked && !checkbox300.checked && !checkbox300or.checked
         "
         class="directions-500"
       >
-      <form [formGroup]="form500">
-
-      </form>
         <mat-checkbox
           >SIG: Take 3 tablets, by mouth, once daily; Dispense Quantity:
           #90</mat-checkbox
